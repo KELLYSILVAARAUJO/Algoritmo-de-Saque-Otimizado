@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="caixa ELETRONICO"/>
+        <attribute name="authors" value="Eliel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-03 10:24:37 "/>
+        <attribute name="created" value="RWxpZWw7REVTS1RPUC1HTlREUzFJOzIwMjUtMDktMDI7IjA1OjI1OjIzICI7Mjc3Mg=="/>
+        <attribute name="edited" value="RWxpZWw7REVTS1RPUC1HTlREUzFJOzIwMjUtMDktMDM7IjEwOjI0OjM3ICI7MzsyODgz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valorsaque" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ol&#225;! Por favor, digite o valor que deseja sacar: &quot;" newline="True"/>
+            <input variable="valorsaque"/>
+            <declare name="notas100" type="Integer" array="False" size=""/>
+            <assign variable="notas100" expression="valorsaque / 100"/>
+            <assign variable="valorsaque" expression="valorsaque % 100"/>
+            <declare name="notas50" type="Integer" array="False" size=""/>
+            <assign variable="notas50" expression="valorsaque / 50"/>
+            <assign variable="valorsaque" expression="valorsaque % 50"/>
+            <declare name="notas20" type="Integer" array="False" size=""/>
+            <assign variable="notas20" expression="valorsaque / 20"/>
+            <assign variable="valorsaque" expression="valorsaque % 20"/>
+            <declare name="notas10" type="Integer" array="False" size=""/>
+            <assign variable="notas10" expression="valorsaque / 10"/>
+            <assign variable="valorsaque" expression="valorsaque % 10"/>
+            <declare name="notas2" type="Integer" array="False" size=""/>
+            <assign variable="notas2" expression="valorsaque / 2"/>
+            <assign variable="valorsaque" expression="valorsaque % 2"/>
+            <declare name="notas1" type="Integer" array="False" size=""/>
+            <assign variable="notas1" expression="valorsaque / 1"/>
+            <output expression="&quot;Saque efetuado com sucesso! Aqui est&#225; a distribui&#231;&#227;o das notas:&quot;" newline="True"/>
+            <output expression="&quot;Notas de R$100,00: &quot; &amp; notas100" newline="True"/>
+            <output expression="&quot;Notas de R$50,00: &quot; &amp; notas50" newline="True"/>
+            <output expression="&quot;Notas de R$20,00:  &quot; &amp; notas20" newline="True"/>
+            <output expression="&quot;Notas de R$10,00 :&quot; &amp; notas10" newline="True"/>
+            <output expression="&quot;Notas de R$2,00: &quot; &amp; notas2" newline="True"/>
+            <output expression="&quot;Notas de R$1,00: &quot; &amp; notas1" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
